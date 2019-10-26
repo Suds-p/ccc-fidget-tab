@@ -1,9 +1,9 @@
 /////////////   MAIN FUNCTIONS  ////////////////
 
 function setup() {
-	var c = document.getElementById("mainCanvas");
-	c.width = window.innerWidth;
-	c.height = window.innerHeight;
+	var c = document.getElementById("mainCanvas"); // gets canvas element from HTML
+	c.width = window.innerWidth;     // give canvas same width...
+	c.height = window.innerHeight;   // and height as our window.
 }
 
 function reactKey(evt) {
@@ -18,6 +18,7 @@ function reactKey(evt) {
 	// Extra function to randomly generate color values (0-255)
 	var r = function() { return Math.random() * 256 };
 
+	// Call r from above 3 times to make random numbers in string
 	ctx.strokeStyle = "rgb(" + r() + ", " + r() + ", " + r() + ")";
 	ctx.lineWidth = 8;
 
