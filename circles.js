@@ -21,7 +21,7 @@ function drawCircle(xcoor, ycoor) {
 
 	var colour = function() {return mag/diag*366}
 
-	ctx.strokeStyle = "hsl("+ colour() +",100%, 60%"; // set orange color for stroke
+	ctx.strokeStyle = "hsl("+ colour() +",100%, 60%)"; // set orange color for stroke
 	ctx.lineWidth = 8;
 
 	ctx.arc(centerX, centerY, rad, 0, 2 * Math.PI);
