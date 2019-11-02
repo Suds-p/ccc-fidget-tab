@@ -39,7 +39,7 @@ function reactKey(evt) {
 
 	listOfCircles.push([centerX, centerY, rad, color, lineWidth]);
 
-	if (listOfCircles.length === 5) {
+	if (listOfCircles.length === 10) {
 		listOfCircles.shift();
 	}
 
