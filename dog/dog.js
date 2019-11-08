@@ -18,13 +18,15 @@ function click(evt) {
   div.style.marginLeft = evt.clientX - (dog.width / 2) + 'px'; 
   div.style.marginTop = evt.clientY - (dog.height / 2) + 'px';
 
-  // tongue.src="tongue.png";
-  // tongue.class="tongue";
-
   div.appendChild(dog);
 
   var tongue = document.createElement("img");
+  tongue.src="tongue.png";
+  tongue.class="tongue";
+  tongue.width = dog.width * .136;
+
   div.appendChild(tongue);
+  // tongue.marginTop = "-57%";
 
   document.body.appendChild(div); 
 }
