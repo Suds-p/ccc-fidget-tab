@@ -1,0 +1,21 @@
+.center {
+    display: block;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    margin-top: -50px; 
+    margin-left: -100px;
+}
+
+.tongue {
+    display: block;
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    margin-top: 56px;
+    margin-left: 0px;
+    height: 30px;
+    width: 30px;
+    transform-origin: 20% 0%;
+    transform: rotate(100deg);
+}

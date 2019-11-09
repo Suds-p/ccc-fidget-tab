@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+	"name": "FT prototype",
+	"description": "New Tab Test",
+	"version": "1.0",
+
+	"chrome_url_overrides": {
+		"newtab": "dog.html"
+	},
+
+	"browser_action": {
+	},
+
+	"permissions": ["tabs"],
+
+	"background": {
+		"scripts": ["background.js"]
+	}
+}
