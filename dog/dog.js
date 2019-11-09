@@ -36,26 +36,6 @@ function click(evt) {
   document.body.appendChild(div);
 }
 
-function reactMove(evt) {
-  var x = evt.clientX;     // Get the horizontal coordinate
-  var y = evt.clientY;
-  var coor = "X coords: " + x + ", Y coords: " + y;
-  console.log(coor);
-
-  //get coordinates of tongue area of specific dog 
-  var dogX = 532;
-  var dogY = 419;
-
-  //calculate angle between mouse coordinate and tongue coordinate
-  var degrees = (180 / Math.PI) * Math.atan((dogX - x) / (y - dogY)) + 45;
-  console.log(degrees - 45);
-
-  if (y < dogY) { degrees += 180; }
-
-  document.getElementById("tongue").style.transform = "rotate(".concat(degrees.toString(), "deg)");
-
-}
-
 function tongueAngle(evt) {
   var x = evt.clientX;     // Get the horizontal coordinate
   var y = evt.clientY;
@@ -65,6 +45,7 @@ function tongueAngle(evt) {
     var tongue = tongues.item(i);
     var dogX = tongue.getBoundingClientRect().left + tongue.getBoundingClientRect().width / 2;
     var dogY = tongue.getBoundingClientRect().top + tongue.getBoundingClientRect().height / 2;
+    //calculate angle between mouse coordinate and tongue coordinate
     var degrees = (180 / Math.PI) * Math.atan((dogX - x) / (y - dogY)) + 45;
     if (y < dogY) { degrees += 180; }
     tongue.style.transform = "rotate(".concat(degrees.toString(), "deg)");
@@ -73,7 +54,5 @@ function tongueAngle(evt) {
 }
 
 /////////////   SETUP THE HANDLERS  ////////////////
-
-document.addEventListener("mousemove", reactMove);
 document.addEventListener("mousemove", tongueAngle);
 document.addEventListener("mousedown", click);
