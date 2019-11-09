@@ -21,12 +21,15 @@ function click(evt) {
   div.appendChild(dog);
 
   var tongue = document.createElement("img");
+  
   tongue.src="tongue.png";
-  tongue.class="tongue";
   tongue.width = dog.width * .136;
 
+  tongue.style.position = "fixed";
+  tongue.style.marginTop = ((52 * dog.height) / 112).toString() + "px";
+  tongue.style.marginLeft = ((-63 * dog.width) / 117).toString() + "px";
+
   div.appendChild(tongue);
-  // tongue.marginTop = "-57%";
 
   document.body.appendChild(div);
 }
