@@ -2,7 +2,12 @@
 
 //make another dog appear on click
 function click(evt) {
+  if (evt.clientX > 0 && evt.clientX < 50 && evt.clientY > 0 && evt.clientY < 50) {
+    return;
+  }
+
   var div = document.createElement("div");
+  div.classList.add("dogdiv");
 
   //dog image
   var dog = document.createElement("img");
@@ -12,11 +17,11 @@ function click(evt) {
   var original_height = dog.height;
 
   dog.width = Math.random() * 200 + 50;
-  dog.height = dog.width * (original_width / original_height);
+  dog.height = dog.width * original_width / original_height;
 
   div.style.position = "fixed";
   div.style.marginLeft = evt.clientX - (dog.width / 2) + 'px';
-  div.style.marginTop = evt.clientY - (dog.height / 2) + 'px';
+  div.style.marginTop = evt.clientY - (dog.height / 1.5) + 'px';
 
   div.appendChild(dog);
 
@@ -53,6 +58,15 @@ function tongueAngle(evt) {
 
 }
 
+function clear(evt) {
+  var allDogs = document.getElementsByClassName("dogdiv");
+  console.log(allDogs);
+  for (var i = 0; i < allDogs.length; i++) {
+    allDogs.item(i).style.display = "none";
+  }
+}
+
 /////////////   SETUP THE HANDLERS  ////////////////
 document.addEventListener("mousemove", tongueAngle);
 document.addEventListener("mousedown", click);
+document.getElementById('button').addEventListener("mousedown", clear);
