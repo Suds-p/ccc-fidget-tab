@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+	<title>Fidget Tab</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="mainStyles.css" />
+	<!-- <script src="circles.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+		$('.trigger, .popup').click(function() {
+			  $('.popup').toggleClass('close');
+	});
+		</script>
+</head>
+
+<body>
+
+	<<div class="sidebar">
+			<a href="menu.html"> <div> Menu </div> </a>
+			<a> <div> My Fidgets </div> </a>
+			<a> <div> Settings</div> </a>
+	</div>
+
+	<!-- Code source: https://stackoverflow.com/questions/36316862/how-to-get-a-div-to-slide-up-from-the-bottom-of-the-page-using-css -->
+	<button class="trigger">
+			Show popup
+	</button>
+	<div class="popup close">
+			<p>Hello</p>
+	</div>
+	
+</body>
+</html>
