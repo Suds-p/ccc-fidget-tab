@@ -14,15 +14,16 @@ function drawCircle(xcoor, ycoor) {
 
 	var centerX = xcoor;  // returns something in [0, 1] * c.width
 	var centerY = ycoor; // returns something in [0, 1] * c.height
-	var rad = 30;
+	var rad = 15;
 
 	var mag = Math.pow((Math.pow(xcoor,2) + Math.pow(ycoor,2)),0.5)
 	var diag = Math.pow((Math.pow(c.width,2)+Math.pow(c.height,2)),0.5)
 
 	var colour = function() {return mag/diag*366}
 
-	ctx.strokeStyle = "hsl("+ colour() +",100%, 60%)"; // set orange color for stroke
-	ctx.lineWidth = 8;
+	ctx.strokeStyle = "hsl("+ colour() +",100%, 60%)"; // set color dependent
+														//on position
+	ctx.lineWidth = 2;
 
 	ctx.arc(centerX, centerY, rad, 0, 2 * Math.PI);
 	ctx.stroke();
@@ -40,7 +41,7 @@ document.addEventListener("mousemove", e =>{
 	}
 })
 document.addEventListener("mouseup", e=>{
-	if (isDrawing ===true){
+	if (isDrawing === true){
 		isDrawing = false
 	}
 })
