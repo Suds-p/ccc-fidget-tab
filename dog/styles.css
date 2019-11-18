@@ -22,12 +22,20 @@
 
 #button {
     display: inline-block;
-    border-style: solid;
+    width: 50px;
+    height: 30px;
+    /* border-style: solid; */
     border-width: 1px;
-    border-radius: 15px;
+    border-radius: 30px;
     padding: 0px 10px; 
+    text-align: center;
+    line-height: 6px;
+    background-color: #d0d0d0;
+    color:#5b5b5b;
+    font-weight: bold;
 }
 
 #button:hover {
-    background-color: red;
+    /* background-color: red; */
+    cursor: pointer;
 }
