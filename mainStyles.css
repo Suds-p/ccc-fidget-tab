@@ -6,12 +6,30 @@
     margin: auto;
   }
 
-.flex-container > div {
+.fidget {
     padding: 10px;
     width: 300px;
     height: 150px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    transition: all 0.3s ease-in-out;
     background-color: yellow;
     margin: 10px;
+}
+
+.fidget::after {
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.fidget:hover {
+  transform: scale(1.1, 1.1);
 }
 
 #header{
@@ -59,9 +77,3 @@ button{
     top: 100%;
     height: 0;
   }
-
-  .classWithShadow{
-    -moz-box-shadow: 3px 3px 4px #000; 
-    -webkit-box-shadow: 3px 3px 4px #000; 
-    box-shadow: 3px 3px 4px #000; 
- }
