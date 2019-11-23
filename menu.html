@@ -5,23 +5,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" href="mainStyles.css" />
 	<!-- <script src="circles.js"></script> -->
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-  	crossorigin="anonymous">
+	<!-- JQuery-->
+	<script
+  src="https://code.jquery.com/jquery-1.12.4.js"
+  integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
+  crossorigin="anonymous"></script>
+  <script>
+	   $(document).ready(function() {
+ 			$(".box").click(function(){  
+				$(this).toggleClass("clicked")
+      });
+});
 	</script>
+
 </head>
 
 <body>
-
 	<p id="header">Choose Add-Ons</p>
-		<div class="flex-container">
-				<div class="fidget">1</div>
-				<div class="fidget">2</div>
-				<div class="fidget">3</div>
-				<div class="fidget">4</div>
-				<div class="fidget">5</div>
-				<div class="fidget">6</div>
-		 </div>
+	<div class="flex-container">
+		<div class="box unclicked"></div>
+		<div class="box unclicked"></div>
+		<div class="box unclicked"></div>
+		<div class="box unclicked"></div>
+		<div class="box unclicked"></div>
+		<div class="box unclicked"></div>
+ </div>
 		 <button type="button">Save</button>
 
 </body>
