@@ -1,0 +1,13 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+<<<<<<< HEAD:styles.css
+
+#mainCanvas {
+    background: #dbf3fa;
+=======
+#mainCanvas{
+	background: black;
+>>>>>>> gradient-rainbow-circles:Rainbow/styles.css
+}
