@@ -49,7 +49,7 @@ function reactMouse(evt) {
 	var r = function() { return Math.random() * 256 };
 	ctx.fillStyle = "rgb(" + r() + ", " + r() + ", " + r() + ")";
 
-	var randLanguage = Math.round(Math.random() * 10);
+	var randLanguage = Math.round(Math.random() * 11);
 	var greeting
 
 	if(randLanguage == 1)
@@ -87,6 +87,10 @@ function reactMouse(evt) {
 	else if(randLanguage == 9)
 	{
 		greeting = "	Здравствуйте!";
+	}
+	else if(randLanguage== 10)
+	{
+		greeting = "สวัสดี";
 	}
 	else {
 		greeting = "Hello!!!";
