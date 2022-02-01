@@ -7,7 +7,7 @@ $(document).ready(function() {
 function runWidget() {
 	var opts = document.getElementById('widget-select').options;
 	var selected = opts[opts.selectedIndex].value;
-	if (['dog', 'Greetings', 'KoiPond', 'Rainbow'].includes(selected)) {
+	if (['dog', 'Greetings', 'KoiPond', 'Rainbow', 'grc'].includes(selected)) {
 		window.location.href = `/${selected}/main.html`;
 	}
 }
