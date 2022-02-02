@@ -3,6 +3,10 @@
 <head>
 	<title>Fidget Tab</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="mainPage.css" />
 </head>
 
@@ -12,17 +16,33 @@
 		<a> <div class="little trigger"><img src="icons/iconmonstr-user-1-72.png"/></div> </a>
 		<a> <div class="little"><img src="icons/iconmonstr-gear-1-72.png"/></div> </a>
 	</div>
-
-	<div class="select-container">
-		Pick a widget to try out! <br>
-		<select id="widget-select">
-			<option value="dog">Doggo</option>
-			<option value="grc">Gradient Rainbow Circles</option>
-			<option value="Greetings">Greetings</option>
-			<option value="KoiPond">Koi Pond</option>
-			<option value="Rainbow">Rainbow</option>
-		</select>
-		<button id="widget-select-btn">Check it out!</button>
+	<div class="full-page">
+		<div class="row vert-container">
+			<div class="row title">
+				<div class="title-container">
+					<h1>Fidget Tab</h1>
+				</div>
+				
+			</div>
+			
+			<div class="row">
+				<div class="select-container">
+					<p id="select-text">
+						<i class="material-icons">keyboard_arrow_right</i> Pick a widget to try out!
+					</p>
+					<br>
+						
+					<select id="widget-select">
+						<option value="dog">Doggo</option>
+						<option value="grc">Gradient Rainbow Circles</option>
+						<option value="Greetings">Greetings</option>
+						<option value="KoiPond">Koi Pond</option>
+						<option value="Rainbow">Rainbow</option>
+					</select>
+					<button id="widget-select-btn">Check it out!</button>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- Code source: https://stackoverflow.com/questions/36316862/how-to-get-a-div-to-slide-up-from-the-bottom-of-the-page-using-css -->

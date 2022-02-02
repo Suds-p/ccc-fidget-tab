@@ -1,9 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKccEXsv3d5CzAQ_jrPT3fJdTufaxXyJQLLuu87J1Ltj0bwSTQJAQmQAE2sBA--hs3eZ8&usqp=CAU);
+  background-size: cover;
+}
+
+.full-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  padding: 20px 30px;
+  background: rgba(0,0,0,0.15);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.title h1 {
+  font-size: 100px;
+  font-family: 'Outfit', sans-serif;
+  color: white;
+}
+
+.vert-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.vert-container .row {
+  width: 100%;
+}
+
 .flex-container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
+}
+
+.select-container {
+  background: rgba(0,0,0,0.15);
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+}
+
+.select-container p {
+  font-size: 16px;
+}
+
+#select-text {
+  display: flex;
+  align-items: center;
+}
+
+select {
+  padding: 5px;
+  border-radius: 4px;
+  border: none;
+  height: 40px;
+  margin-right: 20px;
 }
 
 .unclicked {
@@ -20,8 +86,6 @@
 
 .clicked {
   padding: 10px;
-  width: 300px;
-  height: 150px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 1px 2px rgba(0,0,0,0.15);
@@ -35,8 +99,6 @@
 
 .unclicked::after {
   z-index: -1;
-  width: 100%;
-  height: 100%;
   opacity: 0;
   border-radius: 5px;
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -70,11 +132,13 @@
 
 button{
   border-radius: 5px;
-  width:200px;
-  height: 50px;
-  background-color: white;
-  color: black;
+  border: 2px inset #2c87d7;
+  width: 120px;
+  height: 40px;
+  background-color: rgba(4, 48, 122, 0.91);
+  color: #d9d9d9;
   align-items: center;
+  font-family: Outfit;
 }
 
 .sidebar{
@@ -88,7 +152,7 @@ button{
 
 .little{
   width: 80px;
-  background-color: #d8eaf0;
+  background-color: rgba(255,255,255,0.42);
   border-radius: 5px;
   padding: 5px;
 }
