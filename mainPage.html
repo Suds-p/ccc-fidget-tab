@@ -11,12 +11,12 @@
 </head>
 
 <body>
-	<div class="sidebar">
-		<a href="menu.html"><div class="little"><img src="icons/iconmonstr-menu-2-72.png"/></div> </a>
-		<a> <div class="little trigger"><img src="icons/iconmonstr-user-1-72.png"/></div> </a>
-		<a> <div class="little"><img src="icons/iconmonstr-gear-1-72.png"/></div> </a>
-	</div>
 	<div class="full-page">
+		<div class="sidebar">
+			<a href="menu.html"><div class="little"><img src="icons/iconmonstr-menu-2-72.png"/></div> </a>
+			<a> <div class="little trigger"><img src="icons/iconmonstr-user-1-72.png"/></div> </a>
+			<a> <div class="little"><img src="icons/iconmonstr-gear-1-72.png"/></div> </a>
+		</div>
 		<div class="row vert-container">
 			<div class="row title">
 				<div class="title-container">
@@ -31,14 +31,17 @@
 						<i class="material-icons">keyboard_arrow_right</i> Pick a widget to try out!
 					</p>
 					<br>
-						
-					<select id="widget-select">
-						<option value="dog">Doggo</option>
-						<option value="grc">Gradient Rainbow Circles</option>
-						<option value="Greetings">Greetings</option>
-						<option value="KoiPond">Koi Pond</option>
-						<option value="Rainbow">Rainbow</option>
-					</select>
+					
+
+						<div class="custom-select">
+							<select id="widget-select">
+								<option value="dog">Doggo</option>
+								<option value="grc">Gradient Rainbow Circles</option>
+								<option value="Greetings">Greetings</option>
+								<option value="KoiPond">Koi Pond</option>
+								<option value="Rainbow">Rainbow</option>
+							</select>
+						</div>
 					<button id="widget-select-btn">Check it out!</button>
 				</div>
 			</div>

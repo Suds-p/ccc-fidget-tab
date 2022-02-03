@@ -3,13 +3,18 @@
   padding: 0;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKccEXsv3d5CzAQ_jrPT3fJdTufaxXyJQLLuu87J1Ltj0bwSTQJAQmQAE2sBA--hs3eZ8&usqp=CAU);
   background-size: cover;
+  height: 100%;
 }
 
 .full-page {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,6 +52,50 @@ body {
   justify-content: center;
   margin: auto;
 }
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+/* .custom-select select {
+  display: none;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+} */
+
+/* .custom-select select::-ms-expand {
+  display: none;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.custom-select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+} */
 
 .select-container {
   background: rgba(0,0,0,0.15);
@@ -148,6 +197,8 @@ button{
   float: right;
   align-items: center;
   margin-bottom: 10px;
+  position: absolute;
+  right: 0;
 }
 
 .little{
