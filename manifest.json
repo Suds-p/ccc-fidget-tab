@@ -8,9 +8,6 @@
 		"newtab": "mainPage.html"
 	},
 
-	"browser_action": {
-	},
-
 	"permissions": ["tabs"],
 
 	"content_security_policy": {
