@@ -1,9 +1,3 @@
-$(document).ready(function() {
-	$('.trigger, .popup').click(function() {
-		$('.popup').toggleClass('close');
-	});
-});
-
 function runWidget() {
 	var opts = document.getElementById('widget-select').options;
 	var selected = opts[opts.selectedIndex].value;
